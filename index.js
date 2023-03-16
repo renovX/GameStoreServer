@@ -20,9 +20,6 @@ app.use("/game", gameRouter);
 
 const PORT = process.env.PORT || 8000;
 try {
-  await mongoose.connect(
-    "mongodb+srv://lasty401:foolishdon@cluster0.vzeau1t.mongodb.net/sample"
-  );
   app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`);
   });
